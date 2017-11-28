@@ -1,0 +1,68 @@
+<!--Daman Sharma 
+    ICS3UR-A 
+    January 4, 2016  
+-->
+<!DOCTYPE html>
+<html class="card-panel #F39A9D lighten-2">
+    <head>
+        <script src="AllAnnouncements.js"></script>
+        <script src="materialize.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="materialize.css"/>
+        <title>North Park Accouncements App</title>
+    </head>
+    
+
+    <body> 
+        <!-- Nav Bar --> 
+        <nav>
+            <div class="nav-wrapper">
+                <a href="Menu.html" class="brand-logo" id="marginfix">North Park Announcements</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="Create%20a%20Post.html"> Create a Post </a></li>
+                        <li><a href="Saved.html"> Saved </a></li>
+                        <li><a href="Archived.html"> Archived </a></li>
+                        <li><a href="Student%20Preferences.html">  Preferences </a> </li> 
+                        <li> <a href="Log%20in%20Page.html"> Log in </a></li>
+                    </ul>
+            </div>
+        </nav> 
+    
+        <div> 
+            <h1 class="heading"> Home </h1>
+        </div>    
+        
+       <!-- Table to Display Announcements -->
+       <center>
+            <table>
+                <thead>
+                  <tr>
+                      <th>Name of Club</th>
+                      <th>Category</th>
+                      <th>Grade(s)</th>
+                      <th>Gender</th>
+                      <th>Notice</th>
+                      <th>Tags</th>
+                      <th>Important?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="nameClub"></td>
+                    <td id="nameCategory"></td>
+                    <td id="nameGrade"></td>
+                    <td id="nameGender"></td>
+                    <td id="noticeUser"></td>
+                    <td id="nameTag"></td>
+                    <td id="importantAnnounced"></td>  
+                  </tr>
+                </tbody>   
+            </table>     
+        </center>
+        
+         <!-- Script to Run "getInfo" function -->
+        <script>
+            window.onload = allAnnouncements();
+        </script>    
+    </body>
+</html>

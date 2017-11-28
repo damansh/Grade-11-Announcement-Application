@@ -1,0 +1,29 @@
+/*  Daman Sharma 
+    ICS3UR-A 
+    January 4, 2016
+*/
+* {
+    background-color: antiquewhite;    
+}
+h1 {
+ font-family: Roboto-Light;  
+    
+}
+
+a {
+    font-family: Roboto-Regular;
+    text-align: left;
+}
+a:hover {
+    color: red;
+    font-weight: bold;
+}
+p {
+    font-family: Roboto-Light;
+}
+a:link {
+    text-decoration: none;
+}
+#main {
+    font-family: Roboto-Light;
+}

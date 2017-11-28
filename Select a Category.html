@@ -1,0 +1,55 @@
+<!--Daman Sharma 
+    ICS3UR-A 
+    January 13, 2016  
+-->
+<!DOCTYPE html>
+<html class="card-panel #F39A9D lighten-2">
+    <head>
+        <script src="materialize.js"></script>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="Category.js"></script>
+        <link type="text/css" rel="stylesheet" href="materialize.css"/>
+        <title> North Park Accouncements App</title>
+    </head>
+    
+
+    <body>
+        <!-- Nav Bar --> 
+        <nav>
+            <div class="nav-wrapper">
+                <a href="Menu.html" class="brand-logo" id="marginfix">North Park Announcements</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="Create%20a%20Post.html"> Create a Post </a></li>
+                        <li><a href="Saved.html"> Saved </a></li>
+                        <li><a href="Archived.html"> Archived </a></li>
+                        <li><a href="Student%20Preferences.html">  Preferences </a> </li> 
+                        <li><a href="Log%20in%20Page.html"> Log in </a></li>
+                    </ul>
+            </div>
+        </nav> 
+        
+         <!-- Select a Category -->
+        <div> 
+            <h1 class="heading"> Select a Category </h1>
+        </div>    
+        
+        <center>
+            <select class="browser-default" id="category">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="Team Sports">Team Sports</option>
+                <option value="Individual Sports">Individual Sports</option>
+                <option value="Arts">Arts</option>
+                <option value="Technology">Technology</option>
+                <option value="Language">Language</option>
+            </select>
+        </center>
+        
+        <br>
+        <br>
+        
+        <center> 
+            <div class="row">
+                <button onclick="getCategory()" class="btn waves-effect waves-light" type="button" name="action">Submit</button>
+            </div>
+        </center>
+    </body>
